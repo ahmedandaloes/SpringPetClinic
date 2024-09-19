@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+    agent { label 'build-server' }
     tools { maven 'M3' }
     
     stages {
