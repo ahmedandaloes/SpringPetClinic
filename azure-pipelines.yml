@@ -16,9 +16,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: SonarQubePublish@6
-  inputs:
-    pollingTimeoutSec: '300'
 - task: SonarQubePrepare@6
   inputs:
     SonarQube: 'SonarQube AWS andaloes'
