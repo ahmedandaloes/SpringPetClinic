@@ -1,4 +1,18 @@
+
 # Starter pipeline
+- task: SonarQubePublish@6
+  inputs:
+    pollingTimeoutSec: '300'
+- task: SonarQubePrepare@6
+  inputs:
+    SonarQube: 'SonarQube AWS andaloes'
+    scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner,
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=MyFirstProject_MyFirstProject_761ffc7f-43d9-4caa-873f-6037d00cd081
+      sonar.projectName=MyFirstProject
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -17,3 +31,4 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
