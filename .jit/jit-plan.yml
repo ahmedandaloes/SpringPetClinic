@@ -38,4 +38,17 @@ items:
         '1':
           status: not_applicable
           note: I not AWS
+  - name: |
+      Conduct periodic architecture reviews (minimum once every year)
+    uses: >-
+      jitsecurity-controls/jit-plans/items/architecture_review/item-arch-review.yml@latest
+    input:
+      note: ''
+      requirements:
+        '1':
+          status: passed
+          note: 'yes'
+        '2':
+          status: passed
+          note: 'Yes'
 
