@@ -51,4 +51,14 @@ items:
         '2':
           status: passed
           note: 'Yes'
+  - name: |
+      Review the AWS Shared Responsibility Models for Security and Resiliency
+    uses: >-
+      jitsecurity-controls/jit-plans/items/architecture_review/item-arch-shared-responsibility.yml@latest
+    input:
+      note: ''
+      requirements:
+        '1':
+          status: passed
+          note: Done
 
