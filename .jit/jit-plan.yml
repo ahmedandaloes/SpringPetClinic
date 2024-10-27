@@ -28,4 +28,14 @@ items:
         '1':
           status: passed
           note: 'Yes'
+  - name: |
+      Enable AWS Business Support (or greater) on all production AWS accounts
+    uses: >-
+      jitsecurity-controls/jit-plans/items/support_level/item-support-business.yml@latest
+    input:
+      note: ''
+      requirements:
+        '1':
+          status: not_applicable
+          note: I not AWS
 
